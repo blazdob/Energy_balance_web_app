@@ -235,9 +235,9 @@
       gradientStrokeFill_1.addColorStop(0, '#fa5539');
       gradientStrokeFill_1.addColorStop(1, '#90EE90');
       var areaData = {
-        labels: ["Jan", "Feb", "Mar", "Apr", "Maj", "Jun", "Jul"],
+        labels: ["2015", "2016", "2017", "2018", "2019", "2020"],
         datasets: [{
-          data: [300, 350, 290, 270, 220, 180, 180, 160],
+          data: [2566.04, 2763.15, 2953.74, 2866.94, 2866.74, 2778.85],
           backgroundColor: gradientStrokeFill_1,
           borderColor: '#ADFF2F',
           borderWidth: 0,
@@ -303,9 +303,9 @@
       gradientStrokeFill_1.addColorStop(0, '#fa5539');
       gradientStrokeFill_1.addColorStop(1, '#90EE90');
       var areaData = {
-        labels: ["Jan", "Feb", "Mar", "Apr", "Maj", "Jun", "Jul"],
+        labels: ["2015", "2016", "2017", "2018", "2019", "2020"],
         datasets: [{
-          data: [150, 160, 120, 200, 280, 270, 300, 320],
+          data: [156.17, 163.15, 170.74, 176.94, 194.77, 201.01],
           backgroundColor: gradientStrokeFill_1,
           borderColor: '#ADFF2F',
           borderWidth: 0,

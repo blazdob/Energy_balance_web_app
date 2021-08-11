@@ -305,10 +305,10 @@ $(function () {
     var barChart = new Chart(barChartCanvas, {
       type: 'bar',
       data: {
-        labels: ["Jan", "Feb", "Mar", "Apr", "Maj", "Jun", "Jul", "Aug", "Sep", "Okt", "Nov", "Dec"],
+        labels: ["EL-KO", "lesna biomasa", "zemeljski plin", "daljinsko ogrevanje", "ostalo"],
         datasets: [{
           label: 'Profit',
-          data: [15, 28, 14, 22, 38, 30, 40, 70, 85, 50, 23, 20],
+          data: [4623, 4843, 3963, 5502, 3082],
           backgroundColor: ChartColor[0],
           borderColor: ChartColor[0],
           borderWidth: 0
@@ -330,7 +330,7 @@ $(function () {
             display: true,
             scaleLabel: {
               display: true,
-              labelString: 'Sales by year',
+              labelString: 'Način ogrevanja',
               fontSize: 12,
               lineHeight: 2
             },
@@ -338,7 +338,7 @@ $(function () {
               fontColor: '#bfccda',
               stepSize: 50,
               min: 0,
-              max: 150,
+              max: 6000,
               autoSkip: true,
               autoSkipPadding: 15,
               maxRotation: 0,
@@ -403,20 +403,41 @@ $(function () {
     var stackedbarChart = new Chart(stackedbarChartCanvas, {
       type: 'bar',
       data: {
-        labels: ["Jan", "Feb", "Mar", "Apr", "Maj", "Jun", "Jul"],
+        labels: ["2020"],
         datasets: [{
-            label: "Desktop",
+            label: "EL-KO",
             backgroundColor: ChartColor[0],
             borderColor: ChartColor[0],
             borderWidth: 1,
-            data: [55, 45, 44, 54, 38, 40, 50]
+            data: [4623]
           },
           {
-            label: "Mobile",
+            label: "Lesna biomasa",
             backgroundColor: ChartColor[1],
             borderColor: ChartColor[1],
             borderWidth: 1,
-            data: [34, 20, 54, 34, 65, 40, 35]
+            data: [4843]
+          },
+          {
+            label: "zemeljski plin",
+            backgroundColor: ChartColor[2],
+            borderColor: ChartColor[2],
+            borderWidth: 1,
+            data: [3963]
+          },
+          {
+            label: "daljinsko ogrevanje",
+            backgroundColor: ChartColor[3],
+            borderColor: ChartColor[3],
+            borderWidth: 1,
+            data: [5502]
+          },
+          {
+            label: "ostalo",
+            backgroundColor: ChartColor[4],
+            borderColor: ChartColor[4],
+            borderWidth: 1,
+            data: [3082]
           }
         ]
       },
@@ -439,15 +460,15 @@ $(function () {
             display: true,
             scaleLabel: {
               display: true,
-              labelString: 'User by time',
+              labelString: 'leto',
               fontSize: 12,
               lineHeight: 2
             },
             ticks: {
               fontColor: '#bfccda',
-              stepSize: 50,
+              stepSize: 550,
               min: 0,
-              max: 150,
+              max: 6000,
               autoSkip: true,
               autoSkipPadding: 15,
               maxRotation: 0,
@@ -464,15 +485,15 @@ $(function () {
             display: true,
             scaleLabel: {
               display: true,
-              labelString: 'Number of users',
+              labelString: 'št. stanovanj',
               fontSize: 12,
               lineHeight: 2
             },
             ticks: {
               fontColor: '#bfccda',
-              stepSize: 50,
-              min: 0,
-              max: 150,
+              stepSize: 500,
+              min: 2000,
+              max: 6000,
               autoSkip: true,
               autoSkipPadding: 15,
               maxRotation: 0,
@@ -490,11 +511,11 @@ $(function () {
           var text = [];
           text.push('<div class="chartjs-legend"><ul>');
           for (var i = 0; i < chart.data.datasets.length; i++) {
-            console.log(chart.data.datasets[i]); // see what's inside the obj.
-            text.push('<li>');
-            text.push('<span style="background-color:' + chart.data.datasets[i].backgroundColor + '">' + '</span>');
-            text.push(chart.data.datasets[i].label);
-            text.push('</li>');
+            //console.log(chart.data.datasets[i]); // see what's inside the obj.
+            //text.push('<li>');
+            //text.push('<span style="background-color:' + chart.data.datasets[i].backgroundColor + '">' + '</span>');
+            //text.push(chart.data.datasets[i].label);
+            //text.push('</li>');
           }
           text.push('</ul></div>');
           return text.join("");
@@ -575,28 +596,36 @@ $(function () {
     });
     document.getElementById('radar-chart-legend').innerHTML = radarChart.generateLegend();
   }
-  if ($("#doughnutChart").length) {
-    var doughnutChartCanvas = $("#doughnutChart").get(0).getContext("2d");
+
+  // PORABA PO ENERGENTIH
+  if ($("#doughnutChart_poraba_energenti").length) {
+    var doughnutChartCanvas_poraba_energenti = $("#doughnutChart_poraba_energenti").get(0).getContext("2d");
     var doughnutPieData = {
       datasets: [{
-        data: [20, 80, 83],
+        data: [1122.33, 658.99, 54.66, 914.69, 27.54],
         backgroundColor: [
           ChartColor[0],
           ChartColor[1],
-          ChartColor[2]
+          ChartColor[2],
+          ChartColor[3],
+          ChartColor[4],
         ],
         borderColor: [
           ChartColor[0],
           ChartColor[1],
-          ChartColor[2]
+          ChartColor[2],
+          ChartColor[3],
+          ChartColor[4],
         ],
       }],
 
       // These labels appear in the legend and in the tooltips when hovering different arcs
       labels: [
-        'Sales',
-        'Profit',
-        'Return',
+        'naftni proizvodi',
+        'zemeljski plin',
+        'hidro energija',
+        'električna energija',
+        'OVE'
       ]
     };
     var doughnutPieOptions = {
@@ -631,13 +660,83 @@ $(function () {
         }
       }
     };
-    var doughnutChart = new Chart(doughnutChartCanvas, {
+    var doughnutChart_poraba_energenti = new Chart(doughnutChartCanvas_poraba_energenti, {
       type: 'doughnut',
       data: doughnutPieData,
       options: doughnutPieOptions
     });
-    document.getElementById('doughnut-chart-legend').innerHTML = doughnutChart.generateLegend();
+    document.getElementById('doughnut-chart-legend').innerHTML = doughnutChart_poraba_energenti.generateLegend();
   }
+
+
+  // PORABA PO SEKTORJIH
+  if ($("#doughnutChart_poraba_sektorji").length) {
+    var doughnutChartCanvas_poraba_sektorji = $("#doughnutChart_poraba_sektorji").get(0).getContext("2d");
+    var doughnutPieData = {
+      datasets: [{
+        data: [1074.44, 845.76, 646.32, 212.31],
+        backgroundColor: [
+          ChartColor[0],
+          ChartColor[1],
+          ChartColor[2],
+          ChartColor[3],
+        ],
+        borderColor: [
+          ChartColor[0],
+          ChartColor[1],
+          ChartColor[2],
+          ChartColor[3],
+        ],
+      }],
+
+      // These labels appear in the legend and in the tooltips when hovering different arcs
+      labels: [
+        'industrija',
+        'promet',
+        'gospodinjstva',
+        'ostala poraba'
+      ]
+    };
+    var doughnutPieOptions = {
+      cutoutPercentage: 75,
+      animationEasing: "easeOutBounce",
+      animateRotate: true,
+      animateScale: false,
+      responsive: true,
+      maintainAspectRatio: true,
+      showScale: true,
+      legend: false,
+      legendCallback: function (chart) {
+        var text = [];
+        text.push('<div class="chartjs-legend"><ul>');
+        for (var i = 0; i < chart.data.datasets[0].data.length; i++) {
+          //text.push('<li><span style="background-color:' + chart.data.datasets[0].backgroundColor[i] + '">');
+          //text.push('</span>');
+          //if (chart.data.labels[i]) {
+          //  text.push(chart.data.labels[i]);
+          //}
+          //text.push('</li>');
+        }
+        text.push('</div></ul>');
+        return text.join("");
+      },
+      layout: {
+        padding: {
+          left: 0,
+          right: 0,
+          top: 0,
+          bottom: 0
+        }
+      }
+    };
+    var doughnutChart_poraba_sektorji = new Chart(doughnutChartCanvas_poraba_sektorji, {
+      type: 'doughnut',
+      data: doughnutPieData,
+      options: doughnutPieOptions
+    });
+    document.getElementById('doughnut-chart-legend').innerHTML = doughnutChart_poraba_sektorji.generateLegend();
+  }
+
 
   if ($("#pieChart").length) {
     var pieChartCanvas = $("#pieChart").get(0).getContext("2d");

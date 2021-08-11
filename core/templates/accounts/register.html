@@ -18,7 +18,6 @@
                         {% if msg %}
                             <span class="text-danger">{{ msg | safe }}</span>
                         {% else %}
-                            Add your credentials
                         {% endif %}
                         
                     </center>                
@@ -79,42 +78,15 @@
                         <div class="form-group d-flex justify-content-center">
                             <div class="form-check form-check-flat mt-0">
                                 <label class="form-check-label">
-                                <input type="checkbox" class="form-check-input" checked> I agree to the terms </label>
+                                <input type="checkbox" class="form-check-input" checked> Strinjam se z pogoji </label>
                             </div>
                         </div>
 
                         <div class="form-group">
-                            <button type="submit" name="register" class="btn btn-primary submit-btn btn-block">Register</button>
-                        </div>
-
-                        <div class="text-block text-center my-3">
-                            <span class="text-small font-weight-semibold">Already have and account?</span>
-                            <a href="{% url 'login' %}" class="text-black text-small">Login</a>
+                            <button type="submit" name="register" class="btn btn-primary submit-btn btn-block">Registriraj se</button>
                         </div>
                     </form>
-                </div>
-                <ul class="auth-footer">
-                    <li>
-                        <a target="_blank" rel="noopener noreferrer" 
-                           href="https://github.com/app-generator/django-dashboard-staradmin">Sources</a>
-                    </li>
-                    <li>
-                        <a target="_blank" rel="noopener noreferrer" 
-                           href="https://appseed.us/admin-dashboards/django-star-admin">Product</a>
-                    </li>
-                    <li>
-                        <a target="_blank" rel="noopener noreferrer" 
-                        href="https://appseed.us">AppSeed</a>
-                    </li>
-                </ul>
-                <p class="footer-text text-center">
-                    &copy; <a class="text-white"
-                            target="_blank" rel="sponsored noopener noreferrer" 
-                            href="https://bit.ly/2UTgih5">BootstrapDash</a> 
-                        - Coded by <a class="text-white" 
-                            target="_blank" rel="noopener noreferrer"
-                            href="https://appseed.us/">AppSeed</a>
-                </p>                
+                </div>            
             </div>
         </div>
     </div>
