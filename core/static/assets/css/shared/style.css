@@ -278,7 +278,7 @@ a {
   text-decoration: none;
   background-color: transparent; }
   a:hover {
-    color: #0056b3;
+    color: #e65d5d;
     text-decoration: underline; }
 
 a:not([href]):not([class]) {
@@ -3181,7 +3181,7 @@ input[type="button"].btn-block {
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
   color: #fff;
-  background-color: #007bff; }
+  background-color: #ee586c; }
 
 .nav-fill > .nav-link,
 .nav-fill .nav-item {

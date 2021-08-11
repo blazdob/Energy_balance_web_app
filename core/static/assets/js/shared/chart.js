@@ -679,13 +679,13 @@ $(function () {
           ChartColor[0],
           ChartColor[1],
           ChartColor[2],
-          ChartColor[3],
+          ChartColor[4],
         ],
         borderColor: [
           ChartColor[0],
           ChartColor[1],
           ChartColor[2],
-          ChartColor[3],
+          ChartColor[4],
         ],
       }],
 
