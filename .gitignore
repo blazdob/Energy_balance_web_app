@@ -24,3 +24,9 @@ package-lock.json
 staticfiles/*
 !staticfiles/.gitkeep 
 .vscode/symbols.json
+
+# Text backup files
+*.bak
+
+# Database
+*.sqlite3
