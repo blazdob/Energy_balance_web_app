@@ -7713,7 +7713,7 @@ input:focus {
 body {
   font-size: 1rem;
   font-family: "roboto", sans-serif;
-  color: #b94f4f; }
+  color: #1c0202; }
 
 .h1,
 .h2,
@@ -7735,7 +7735,7 @@ h6 {
 
 p,
 a:not([href]):not([tabindex]) {
-  color: #b94f4f;
+  color: #1c0202;
   font-size: 0.875rem; }
 
 .h1,
@@ -7797,30 +7797,30 @@ p {
 
 .blockquote {
   padding: 1.25rem;
-  border: 1px solid #b94f4f; }
+  border: 1px solid #1c0202; }
 
 address p {
   margin-bottom: 0; }
 
 .blockquote-primary {
-  border-color: #b94f4f; }
+  border-color: #1c0202; }
   .blockquote-primary .blockquote-footer {
-    color: #b94f4f; }
+    color: #1c0202; }
 
 .blockquote-secondary {
-  border-color: #b94f4f; }
+  border-color: #1c0202; }
   .blockquote-secondary .blockquote-footer {
-    color: #b94f4f; }
+    color: #1c0202; }
 
 .blockquote-success {
-  border-color: #b94f4f; }
+  border-color: #1c0202; }
   .blockquote-success .blockquote-footer {
-    color: #b94f4f; }
+    color: #1c0202; }
 
 .blockquote-info {
-  border-color: #b94f4f; }
+  border-color: #1c0202; }
   .blockquote-info .blockquote-footer {
-    color: #b94f4f; }
+    color: #1c0202; }
 
 .blockquote-warning {
   border-color: #ffaf00; }
@@ -7843,13 +7843,13 @@ address p {
     color: #252C46; }
 
 .page-title {
-  color: #b94f4f;
+  color: #1c0202;
   margin: 0.38rem 0 0.75rem; }
 
 .card-title {
   font-family: "roboto", sans-serif;
   font-weight: 500;
-  color: #b94f4f;
+  color: #1c0202;
   margin-bottom: 15px;
   font-size: 14px;
   text-transform: capitalize; }
