@@ -155,7 +155,7 @@
       width: 1rem;
       height: 1rem;
       border-radius: 100%;
-      background: #FF0017;
+      background: #CE1141;
       color: #ffffff;
       font-size: 11px;
       top: -1px;
@@ -416,7 +416,7 @@
           display: block;
           height: 100%;
           width: 2px;
-          background: #f3577c; }
+          background: #CE1141; }
         .sidebar > .nav .nav-item:not(.hover-open) .collapse .sub-menu .nav-item .nav-link:hover,
         .sidebar > .nav .nav-item:not(.hover-open) .collapsing .sub-menu .nav-item .nav-link:hover {
           color: #fff; }
@@ -680,10 +680,10 @@
     .page-header-toolbar .btn-group i,
     .page-header-toolbar .btn i {
       font-size: 1.24rem;
-      color: #e62828; }
+      color: #CE1141; }
     .page-header-toolbar .btn-group.dropdown-toggle:after,
     .page-header-toolbar .btn.dropdown-toggle:after {
-      color: #e62828; }
+      color: #CE1141; }
 
 .filter-wrapper {
   display: flex;
@@ -721,20 +721,20 @@
   color: #212529; }
 
 .average-price-card .card {
-  background: #e62828; }
+  background: #CE1141; }
 
 .average-price-card h3 {
   margin-bottom: 0; }
 
 .average-price-card .icon-holder {
   border-radius: 5px;
-  border: 1px solid #e62828;
+  border: 1px solid #CE1141;
   width: 40px;
   height: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #e62828;
+  background: #CE1141;
   color: #fff;
   font-size: 20px; }
   .average-price-card .icon-holder i {
