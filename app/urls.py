@@ -10,8 +10,15 @@ urlpatterns = [
 
     # The home page
     path('', views.index, name='home'),
+    path('basic_data', views.basic_data, name='basic_data'),
+    path('electricity', views.electricity, name='electricity'),
+    path('traffic', views.traffic, name='traffic'),
+    path('heating', views.heating, name='heating'),
+    path('water', views.water, name='water'),
+    path('natural_gas', views.natural_gas, name='natural_gas'),
+    path('petroleum_products', views.petroleum_products, name='petroleum_products'),
 
     # Matches any html file
-    re_path(r'^.*\.*', views.pages, name='pages'),
+    #re_path(r'^.*\.*', views.pages, name='pages'),
 
 ]

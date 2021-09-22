@@ -32,7 +32,7 @@
         <div class="page-header-toolbar">
           <div class="btn-group toolbar-item" role="group" aria-label="Basic example">
             <button type="button" class="btn btn-secondary"><i class="mdi mdi-chevron-left"></i></button>
-            <button type="button" class="btn btn-secondary">2020 - Januar</button>
+            <button type="button" class="btn btn-secondary">2020</button>
             <button type="button" class="btn btn-secondary"><i class="mdi mdi-chevron-right"></i></button>
           </div>
           <div class="filter-wrapper">
@@ -48,7 +48,7 @@
           </div>
           <div class="sort-wrapper">
             <!--<button type="button" class="btn btn-primary toolbar-item">New</button>-->
-            <div class="dropdown ml-lg-auto ml-2 toolbar-item">
+            <div class="dropdown ml-rg-auto ml-2 toolbar-item">
               <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownexport" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Export</button>
               <div class="dropdown-menu" aria-labelledby="dropdownexport">
                 <a class="dropdown-item" href="#">Export as PDF</a>
@@ -60,26 +60,25 @@
       </div>
     </div>
     <!-- Page Title Header Ends-->
-    
     <div class="row">
       <div class="col-md-4">
         <div class="row">
-          <div class="col-md-12 grid-margin stretch-card">
+          <div class="col-md-12 grid-margin">
             <div class="card">
               <div class="card-body pb-3">
                 <div class="row">
                   <div class="col-md-6 grid-margin">
                     <div class="wrapper border-bottom mb-2 pb-2">
-                      <h4 class="font-weight-semibold mb-0">57.185</h4>
+                      <h4 class="font-weight-semibold mb-2">57.185</h4>
                       <div class="d-flex align-items-center">
-                        <p class="mb-0">Število prebivalcev</p>
+                        <p class="mb-2">Število prebivalcev</p>
                         <!--<div class="dot-indicator bg-secondary ml-auto"></div>-->
                       </div>
                     </div>
                     <div class="wrapper">
-                      <h4 class="font-weight-semibold mb-0">22.014</h4>
+                      <h4 class="font-weight-semibold mb-2">22.014</h4>
                       <div class="d-flex align-items-center">
-                        <p class="mb-0">Število gospodinjstev</p>
+                        <p class="mb-2">Število gospodinjstev</p>
                         <!--<div class="dot-indicator bg-primary ml-auto"></div>-->
                       </div>
                     </div>
@@ -88,11 +87,8 @@
                     <!--<div class="ml-auto">
                       <canvas height="100" id="realtime-statistics"></canvas>
                     </div>-->
-                    <div class="d-flex align-items-center mb-2">
-                      <div class="icon-holder bg-primary text-white py-1 px-3 rounded mr-2">
-                        <i class="icon ion-logo-buffer icon-sm"></i>
-                      </div>
-                      <h2 class="font-weight-semibold mb-0">+0.51%</h2>
+                    <div class="d-flex align-items-center mb-5">
+                      <h2 class="font-weight-semibold mb-4">+0.51%</h2>
                     </div>
                     <p>Prirast glede prejšnje leto</p>
                   </div>
@@ -100,39 +96,11 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-12 grid-margin stretch-card">
-            <div class="card">
-              <div class="p-4 border-bottom bg-light">
-                <h4 class="card-title mb-0">Število stanovanj glede na način ogrevanja</h4>
-              </div>
-              <div class="card-body">
-                <div class="d-flex justify-content-between align-items-center pb-4">
-                  <h4 class="card-title mb-3"></h4>
-                  <div id="stacked-bar-traffic-legend"></div>
-                </div>
-                <p class="mb-4"></p>
-                <canvas id="stackedbarChart" style="height:230px"></canvas>
-              </div>
-            </div>
-          </div>
-          <!--<div class="col-lg-12 grid-margin stretch-card">
-            <div class="card">
-              <div class="p-4 border-bottom bg-light">
-                <h4 class="card-title mb-3">Število stanovanj glede na način ogrevanja</h4>
-              </div>
-              <div class="card-body">
-                <div class="d-flex justify-content-between align-items-center pb-4">
-                  <div id="bar-traffic-legend"></div>
-                </div>
-                <canvas id="stackedbarChart" style="height:250px"></canvas>
-              </div>
-            </div>
-          </div>-->
         </div>
       </div>
-      <div class="col-md-8">
+      <div class="col-md-4">
         <div class="row">
-          <div class="col-6 grid-margin stretch-card">
+          <div class="col-md-12 grid-margin">
             <div class="card">
               <div class="card-body pb-0">
                 <div class="d-flex justify-content-between">
@@ -141,46 +109,73 @@
                 </div>
                 <h3 class="font-weight-medium mb-4">2778,85TJ</h3>
               </div>
-              <canvas class="mt-n4" height="90" id="total-revenue"></canva>
+              <canvas id="poraba" width="300" height="100"></canva>
             </div>
           </div>
-          <div class="col-6 grid-margin stretch-card">
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="row">
+          <div class="col-md-12 grid-margin">
             <div class="card">
               <div class="card-body pb-0">
                 <div class="d-flex justify-content-between">
                   <h4 class="card-title mb-0">Proizvodnja energije</h4>
                   <p class="font-weight-semibold mb-0">+3.10%</p>
                 </div>
-                <h3 class="font-weight-medium">201.01TJ</h3>
+                <h3 class="font-weight-medium mb-4">201.01TJ</h3>
               </div>
-              <canvas class="mt-n3" height="90" id="total-transaction1"></canva>
+              <canvas id="proizvodnja" width="300" height="100"></canva>
             </div>
           </div>
-          <div class="col-md-6 grid-margin">
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="row">
+          <div class="col-md-12 grid-margin">
             <div class="card">
-              <div class="p-4 pr-5 border-bottom bg-light d-flex justify-content-between">
+              <div class="p-4 border-bottom bg-light">
+                <h4 class="card-title mb-0">Rast števila prebivalcev v MOK, Ce in KP</h4>
+              </div>
+              <div class="card-body d-flex flex-column">
+                <canvas id="multilineChart" width="300" height="200"></canvas>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="row">
+          <div class="col-md-12 grid-margin">
+            <div class="card">
+              <div class="p-4 pr-5 border-bottom bg-light">
                 <h4 class="card-title mb-0">Poraba po energentih [TJ]</h4>
-                <div id="doughnut-chart-legend" class="mr-4"></div>
               </div>
               <div class="card-body d-flex flex-column">
-                <canvas class="my-auto" id="doughnutChart_poraba_energenti" height="230"></canvas>
+                <canvas id="doughnutChart_poraba_energentih" width="300" height="200"></canvas>
               </div>
             </div>
           </div>
-          <div class="col-md-6 grid-margin">
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="row">
+          <div class="col-md-12 grid-margin">
             <div class="card">
-              <div class="p-4 pr-5 border-bottom bg-light d-flex justify-content-between">
+              <div class="p-4 pr-5 border-bottom bg-light">
                 <h4 class="card-title mb-0">Poraba po sektorjih [TJ]</h4>
-                <div id="doughnut-chart-legend" class="mr-4"></div>
               </div>
               <div class="card-body d-flex flex-column">
-                <canvas class="my-auto" id="doughnutChart_poraba_sektorji" height="230"></canvas>
+                <canvas id="doughnutChart_poraba_sektorjih" width="300" height="200"></canvas>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+    
     <!-- ----- -->
     <div class="row">
       <div class="col-md-12 grid-margin">
@@ -707,6 +702,7 @@
 <!-- Specific JS goes HERE -->
 {% block javascripts %}
   <script src="/static/assets/js/demo_1/dashboard.js"></script>
+  <script src="/static/assets/js/shared/chart-electricity.js"></script>
   <script src="/static/assets/js/shared/chart.js"></script>
 {% endblock javascripts %}
 

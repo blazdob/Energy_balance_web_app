@@ -1,7 +1,7 @@
 
 
 
-Chart.defaults.global.defaultFontSize = 15;
+Chart.defaults.global.defaultFontSize = 18;
 Chart.defaults.global.defaultFontFamily = "Lato";
 
 //MULTILINE GRAF
@@ -170,138 +170,8 @@ var doughnutChart_poraba_sektorjih = new Chart(doughnutChartCanvas_poraba_sektor
       labels: {
         boxWidth: 10,
         fontColor: 'grey'
-      }
-    }
-  }
-});
-
-var poraba = document.getElementById('poraba').getContext('2d');
-var gradientStrokeFill_1 = poraba.createLinearGradient(0, 100, 200, 0);
-gradientStrokeFill_1.addColorStop(0, '#fa5539');
-gradientStrokeFill_1.addColorStop(1, '#90EE90');
-var revenueChart = new Chart(poraba, {
-  type: 'line',
-  data: {
-    labels: ["2015", "2016", "2017", "2018", "2019", "2020"],
-    datasets: [{
-      data: [2566.04, 2763.15, 2953.74, 2866.94, 2866.74, 2778.85],
-      backgroundColor: gradientStrokeFill_1,
-      borderColor: '#ADFF2F',
-      borderWidth: 0,
-      pointBackgroundColor: "#ADFF2F",
-      pointRadius: 7,
-      pointBorderWidth: 3,
-      pointBorderColor: '#fff',
-      pointHoverRadius: 7,
-      pointHoverBackgroundColor: "#fa394e",
-      pointHoverBorderColor: "#fa394e",
-      pointHoverBorderWidth: 2,
-      pointHitRadius: 7,
-    }]
-  },
-  options: {
-    responsive: true,
-    animation: {
-      animateScale: true,
-      animateRotate: true
-    },
-    elements: {
-      point: {
-        radius: 0
-      }
-    },
-    layout: {
-      padding: {
-        left: -10,
-        right: 0,
-        top: 0,
-        bottom: -10
-      }
-    },
-    legend: false,
-    scales: {
-      xAxes: [{
-        gridLines: {
-          display: false
-        },
-        ticks: {
-          display: false
         }
-      }],
-      yAxes: [{
-        gridLines: {
-          display: false
-        },
-        ticks: {
-          display: false
-        }
-      }]
-    }
-  }
-});
-
-var proizvodnja = document.getElementById('proizvodnja').getContext('2d');
-var gradientStrokeFill_1 = proizvodnja.createLinearGradient(0, 100, 200, 0);
-gradientStrokeFill_1.addColorStop(0, '#fa5539');
-gradientStrokeFill_1.addColorStop(1, '#90EE90');
-var revenueChart = new Chart(proizvodnja, {
-  type: 'line',
-  data: {
-    labels: ["2015", "2016", "2017", "2018", "2019", "2020"],
-    datasets: [{
-      data: [156.17, 163.15, 170.74, 176.94, 194.77, 201.01],
-      backgroundColor: gradientStrokeFill_1,
-      borderColor: '#ADFF2F',
-      borderWidth: 0,
-      pointBackgroundColor: "#ADFF2F",
-      pointRadius: 7,
-      pointBorderWidth: 3,
-      pointBorderColor: '#fff',
-      pointHoverRadius: 7,
-      pointHoverBackgroundColor: "#fa394e",
-      pointHoverBorderColor: "#fa394e",
-      pointHoverBorderWidth: 2,
-      pointHitRadius: 7,
-    }]
-  },
-  options: {
-    responsive: true,
-    animation: {
-      animateScale: true,
-      animateRotate: true
-    },
-    elements: {
-      point: {
-        radius: 0
       }
-    },
-    layout: {
-      padding: {
-        left: -10,
-        right: 0,
-        top: 0,
-        bottom: -10
-      }
-    },
-    legend: false,
-    scales: {
-      xAxes: [{
-        gridLines: {
-          display: false
-        },
-        ticks: {
-          display: false
-        }
-      }],
-      yAxes: [{
-        gridLines: {
-          display: false
-        },
-        ticks: {
-          display: false
-        }
-      }]
-    }
   }
 });
 

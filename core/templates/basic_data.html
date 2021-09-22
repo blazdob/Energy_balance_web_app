@@ -1,0 +1,130 @@
+
+{% extends "layouts/base.html" %}
+
+{% block title %} Električna energija {% endblock title %}
+
+<!-- Specific CSS goes HERE -->
+{% block stylesheets %}{% endblock stylesheets %}
+
+{% block content %}
+
+  <div class="content-wrapper">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="row">
+          <div class="col-md-12">
+            <div>
+              </br>
+              </br>
+              <img src="/static/assets/images/Kranj.jpg" width="590"> 
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="row">
+          <div class="col-md-12 grid-margin">
+            <div class="card">
+              <div class="p-4 pr-5 border-bottom bg-light d-flex justify-content-between">
+                <h4 class="card-title mb-0">Število prebivalcev</h4>
+              </div>
+              <div class="card-body d-flex flex-column">
+                <canvas id="stPrebivalcev" width="300" height="210"></canvas>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 grid-margin">
+            <div class="card">
+              <div class="p-4 pr-5 border-bottom bg-light d-flex justify-content-between">
+                <h4 class="card-title mb-0">Delež starostnih skupin</h4>
+              </div>
+              <div class="card-body d-flex flex-column">
+                <canvas id="prebPoStarosti" width="300" height="210"></canvas>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="row">
+          <div class="col-md-12 grid-margin">
+            <div class="card">
+              <div class="p-4 pr-5 border-bottom bg-light d-flex justify-content-between">
+                <h4 class="card-title mb-0">Rast prebivalstva</h4>
+              </div>
+              <div class="card-body d-flex flex-column">
+                <canvas id="multilineChart" width="300" height="210"></canvas>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 grid-margin">
+            <div class="card">
+              <div class="p-4 pr-5 border-bottom bg-light d-flex justify-content-between">
+                <h4 class="card-title mb-0">Delež moški/ženske</h4>
+                <div id="doughnut-chart-legend" class="mr-4"></div>
+              </div>
+              <div class="card-body d-flex flex-column">
+                <canvas id="moskiZenske" width="300" height="210"></canvas>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="row">
+          <div class="col-md-12 grid-margin">
+            <div class="card">
+              <div class="p-4 pr-5 border-bottom bg-light d-flex justify-content-between">
+                <h4 class="card-title mb-0">Površina ozemlja občine</h4>
+              </div>
+              <div class="card-body d-flex flex-column">
+                <canvas id="povrsinaObcine" width="300" height="210"></canvas>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="row">
+          <div class="col-md-12 grid-margin">
+            <div class="card">
+              <div class="p-4 pr-5 border-bottom bg-light d-flex justify-content-between">
+                <h4 class="card-title mb-0">Povprečna starost</h4>
+              </div>
+              <div class="card-body d-flex flex-column">
+                <canvas id="povpStarost" width="300" height="210"></canvas>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="row">
+          <div class="col-md-12 grid-margin">
+            <div class="card">
+              <div class="p-4 pr-5 border-bottom bg-light d-flex justify-content-between">
+                <h4 class="card-title mb-0">Gostota naseljenosti</h4>
+              </div>
+              <div class="card-body d-flex flex-column">
+                <canvas id="gostotaNaseljenosti" width="300" height="210"></canvas>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+{% endblock content %}
+
+<!-- Specific JS goes HERE -->
+{% block javascripts %}
+  <script src="/static/assets/js/shared/chart-basic-info.js"></script>
+{% endblock javascripts %}

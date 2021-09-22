@@ -229,142 +229,142 @@
       });
       document.getElementById('net-profit-legend').innerHTML = radarChart.generateLegend();
     }
-    if ($('#total-revenue').length) {
-      var ctx = document.getElementById('total-revenue').getContext('2d');
-      var gradientStrokeFill_1 = ctx.createLinearGradient(0, 100, 200, 0);
-      gradientStrokeFill_1.addColorStop(0, '#fa5539');
-      gradientStrokeFill_1.addColorStop(1, '#90EE90');
-      var areaData = {
-        labels: ["2015", "2016", "2017", "2018", "2019", "2020"],
-        datasets: [{
-          data: [2566.04, 2763.15, 2953.74, 2866.94, 2866.74, 2778.85],
-          backgroundColor: gradientStrokeFill_1,
-          borderColor: '#ADFF2F',
-          borderWidth: 0,
-          pointBackgroundColor: "#ADFF2F",
-          pointRadius: 7,
-          pointBorderWidth: 3,
-          pointBorderColor: '#fff',
-          pointHoverRadius: 7,
-          pointHoverBackgroundColor: "#fa394e",
-          pointHoverBorderColor: "#fa394e",
-          pointHoverBorderWidth: 2,
-          pointHitRadius: 7,
-        }]
-      };
-      var areaOptions = {
-        responsive: true,
-        animation: {
-          animateScale: true,
-          animateRotate: true
-        },
-        elements: {
-          point: {
-            radius: 0
-          }
-        },
-        layout: {
-          padding: {
-            left: -10,
-            right: 0,
-            top: 0,
-            bottom: -10
-          }
-        },
-        legend: false,
-        scales: {
-          xAxes: [{
-            gridLines: {
-              display: false
-            },
-            ticks: {
-              display: false
-            }
-          }],
-          yAxes: [{
-            gridLines: {
-              display: false
-            },
-            ticks: {
-              display: false
-            }
-          }]
-        }
-      }
-      var revenueChart = new Chart(ctx, {
-        type: 'line',
-        data: areaData,
-        options: areaOptions
-      });
-    }
-    if ($('#total-transaction1').length) {
-      var ctx = document.getElementById('total-transaction1').getContext('2d');
-      var gradientStrokeFill_1 = ctx.createLinearGradient(0, 100, 200, 0);
-      gradientStrokeFill_1.addColorStop(0, '#fa5539');
-      gradientStrokeFill_1.addColorStop(1, '#90EE90');
-      var areaData = {
-        labels: ["2015", "2016", "2017", "2018", "2019", "2020"],
-        datasets: [{
-          data: [156.17, 163.15, 170.74, 176.94, 194.77, 201.01],
-          backgroundColor: gradientStrokeFill_1,
-          borderColor: '#ADFF2F',
-          borderWidth: 0,
-          pointBackgroundColor: "#ADFF2F",
-          pointRadius: 7,
-          pointBorderWidth: 3,
-          pointBorderColor: '#fff',
-          pointHoverRadius: 7,
-          pointHoverBackgroundColor: "#fa394e",
-          pointHoverBorderColor: "#fa394e",
-          pointHoverBorderWidth: 2,
-          pointHitRadius: 7,
-        }]
-      };
-      var areaOptions = {
-        responsive: true,
-        animation: {
-          animateScale: true,
-          animateRotate: true
-        },
-        elements: {
-          point: {
-            radius: 0
-          }
-        },
-        layout: {
-          padding: {
-            left: -10,
-            right: 0,
-            top: 0,
-            bottom: -10
-          }
-        },
-        legend: false,
-        scales: {
-          xAxes: [{
-            gridLines: {
-              display: false
-            },
-            ticks: {
-              display: false
-            }
-          }],
-          yAxes: [{
-            gridLines: {
-              display: false
-            },
-            ticks: {
-              display: false
-            }
-          }]
-        }
-      }
-      var revenueChart = new Chart(ctx, {
-        type: 'line',
-        data: areaData,
-        options: areaOptions
-      });
-    }
+    //if ($('#total-revenue').length) {
+    //  var ctx = document.getElementById('total-revenue').getContext('2d');
+    //  var gradientStrokeFill_1 = ctx.createLinearGradient(0, 100, 200, 0);
+    //  gradientStrokeFill_1.addColorStop(0, '#fa5539');
+    //  gradientStrokeFill_1.addColorStop(1, '#90EE90');
+    //  var areaData = {
+    //    labels: ["2015", "2016", "2017", "2018", "2019", "2020"],
+    //    datasets: [{
+    //      data: [2566.04, 2763.15, 2953.74, 2866.94, 2866.74, 2778.85],
+    //      backgroundColor: gradientStrokeFill_1,
+    //      borderColor: '#ADFF2F',
+    //      borderWidth: 0,
+    //      pointBackgroundColor: "#ADFF2F",
+    //      pointRadius: 7,
+    //      pointBorderWidth: 3,
+    //      pointBorderColor: '#fff',
+    //      pointHoverRadius: 7,
+    //      pointHoverBackgroundColor: "#fa394e",
+    //      pointHoverBorderColor: "#fa394e",
+    //      pointHoverBorderWidth: 2,
+    //      pointHitRadius: 7,
+    //    }]
+    //  };
+    //  var areaOptions = {
+    //    responsive: true,
+    //    animation: {
+    //      animateScale: true,
+    //      animateRotate: true
+    //    },
+    //    elements: {
+    //      point: {
+    //        radius: 0
+    //      }
+    //    },
+    //    layout: {
+    //      padding: {
+    //        left: -10,
+    //        right: 0,
+    //        top: 0,
+    //        bottom: -10
+    //      }
+    //    },
+    //    legend: false,
+    //    scales: {
+    //      xAxes: [{
+    //        gridLines: {
+    //          display: false
+    //        },
+    //        ticks: {
+    //          display: false
+    //        }
+    //      }],
+    //      yAxes: [{
+    //        gridLines: {
+    //          display: false
+    //        },
+    //        ticks: {
+    //          display: false
+    //        }
+    //      }]
+    //    }
+    //  }
+    //  var revenueChart = new Chart(ctx, {
+    //    type: 'line',
+    //    data: areaData,
+    //    options: areaOptions
+    //  });
+    //}
+    //if ($('#total-transaction1').length) {
+    //  var ctx = document.getElementById('total-transaction1').getContext('2d');
+    //  var gradientStrokeFill_1 = ctx.createLinearGradient(0, 100, 200, 0);
+    //  gradientStrokeFill_1.addColorStop(0, '#fa5539');
+    //  gradientStrokeFill_1.addColorStop(1, '#90EE90');
+    //  var areaData = {
+    //    labels: ["2015", "2016", "2017", "2018", "2019", "2020"],
+    //    datasets: [{
+    //      data: [156.17, 163.15, 170.74, 176.94, 194.77, 201.01],
+    //      backgroundColor: gradientStrokeFill_1,
+    //      borderColor: '#ADFF2F',
+    //      borderWidth: 0,
+    //      pointBackgroundColor: "#ADFF2F",
+    //      pointRadius: 7,
+    //      pointBorderWidth: 3,
+    //      pointBorderColor: '#fff',
+    //      pointHoverRadius: 7,
+    //      pointHoverBackgroundColor: "#fa394e",
+    //      pointHoverBorderColor: "#fa394e",
+    //      pointHoverBorderWidth: 2,
+    //      pointHitRadius: 7,
+    //    }]
+    //  };
+    //  var areaOptions = {
+    //    responsive: true,
+    //    animation: {
+    //      animateScale: true,
+    //      animateRotate: true
+    //    },
+    //    elements: {
+    //      point: {
+    //        radius: 0
+    //      }
+    //    },
+    //    layout: {
+    //      padding: {
+    //        left: -10,
+    //        right: 0,
+    //        top: 0,
+    //        bottom: -10
+    //      }
+    //    },
+    //    legend: false,
+    //    scales: {
+    //      xAxes: [{
+    //        gridLines: {
+    //          display: false
+    //        },
+    //        ticks: {
+    //          display: false
+    //        }
+    //      }],
+    //      yAxes: [{
+    //        gridLines: {
+    //          display: false
+    //        },
+    //        ticks: {
+    //          display: false
+    //        }
+    //      }]
+    //    }
+    //  }
+    //  var revenueChart = new Chart(ctx, {
+    //    type: 'line',
+    //    data: areaData,
+    //    options: areaOptions
+    //  });
+    //}
     if ($("#market-overview-chart").length) {
       var MarketingChartCanvas = $("#market-overview-chart").get(0).getContext("2d");
       var Marketing_data_1_1 = [145, 238, 148, 293, 242, 235, 256, 334];

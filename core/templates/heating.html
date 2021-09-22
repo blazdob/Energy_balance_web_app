@@ -15,44 +15,11 @@
           <div class="col-md-12 grid-margin">
             <div class="card">
               <div class="p-4 pr-5 border-bottom bg-light d-flex justify-content-between">
-                <h4 class="card-title mb-0">Poraba - Proizvodnja [TJ]</h4>
-              </div>
-              <div class="row">
-                <div class="col-md-8 grid-margin">
-                  <div class="card-body d-flex flex-column">
-                    <canvas id="pieChart_proizvodnja_poraba" width="200" height="210"></canvas>
-                  </div>
-                </div>
-                <div class="col-md-4 grid-margin">
-                </br>
-                  <div class="wrapper border-bottom mb-2 pb-4">
-                    <h4 class="font-weight-semibold mb-3">7,23%</h4>
-                    <div class="d-flex align-items-center">
-                      <p class="mb-2">Delež samooskrbe</p>
-                      <!--<div class="dot-indicator bg-secondary ml-auto"></div>-->
-                    </div>
-                  </div>
-                  <div class="wrapper">
-                    <h4 class="font-weight-semibold mb-4">201,01 TJ</h4>
-                    <div class="d-flex align-items-center">
-                      <p class="mb-4">Samooskrba</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="row">
-          <div class="col-md-12 grid-margin">
-            <div class="card">
-              <div class="p-4 pr-5 border-bottom bg-light d-flex justify-content-between">
-                <h4 class="card-title mb-0">Poraba po sektorjih  [TJ]</h4>
+                <h4 class="card-title mb-0">Poraba-Proizvodnja</h4>
+                <div id="pie-chart-legend" class="mr-3"></div>
               </div>
               <div class="card-body d-flex flex-column">
-                <canvas id="doughnutChart_poraba_sektorjih" width="300" height="210"></canvas>
+                <canvas class="my-auto" id="pieChart_proizvodnja_poraba" height="220"></canvas>
               </div>
             </div>
           </div>
@@ -63,11 +30,26 @@
           <div class="col-md-12 grid-margin">
             <div class="card">
               <div class="p-4 pr-5 border-bottom bg-light d-flex justify-content-between">
-                <h4 class="card-title mb-0">Proizvodnja po virih [TJ]</h4>
+                <h4 class="card-title mb-0">Poraba po sektorjih</h4>
                 <div id="doughnut-chart-legend" class="mr-4"></div>
               </div>
               <div class="card-body d-flex flex-column">
-                <canvas id="doughnutChart_proizvodnja_viri" width="300" height="210"></canvas>
+                <canvas class="my-auto" id="doughnutChart_poraba_sektorji" height="230"></canvas>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="row">
+          <div class="col-md-12 grid-margin">
+            <div class="card">
+              <div class="p-4 pr-5 border-bottom bg-light d-flex justify-content-between">
+                <h4 class="card-title mb-0">Proizvodnja po virih</h4>
+                <div id="doughnut-chart-legend" class="mr-4"></div>
+              </div>
+              <div class="card-body d-flex flex-column">
+                <canvas class="my-auto" id="doughnutChart_proizvodnja_viri" height="230"></canvas>
               </div>
             </div>
           </div>
@@ -84,14 +66,14 @@
             <div class="d-flex justify-content-between align-items-center pb-4">
               <div id="line-traffic-legend"></div>
             </div>
-            <canvas id="lineChart_OVE_produkcija" width="300" height="150"></canvas>
+            <canvas id="lineChart_OVE_produkcija" style="height:250px"></canvas>
           </div>
         </div>
       </div>
       <div class="col-lg-6 grid-margin stretch-card">
         <div class="card">
           <div class="p-4 border-bottom bg-light">
-            <h4 class="card-title mb-0">Primerjava porabe električne energije na prebivalca v različnih območjih [kWh/preb.]</h4>
+            <h4 class="card-title mb-0">Število stanovanj glede na način ogrevanja</h4>
           </div>
           <div class="card-body">
             <div class="d-flex justify-content-between align-items-center pb-4">
@@ -99,7 +81,7 @@
               <div id="stacked-bar-traffic-legend"></div>
             </div>
             <p class="mb-4"></p>
-            <canvas id="stackedbarChart_EE_prebivalca" width="300" height="150"></canvas>
+            <canvas id="stackedbarChart" style="height:230px"></canvas>
           </div>
         </div>
       </div>
@@ -111,5 +93,5 @@
 
 <!-- Specific JS goes HERE -->
 {% block javascripts %}
-  <script src="/static/assets/js/shared/chart-electricity.js"></script>
+  <script src="/static/assets/js/shared/chart-heating.js"></script>
 {% endblock javascripts %}

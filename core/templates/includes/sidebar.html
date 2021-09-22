@@ -18,25 +18,31 @@
             </li>
             <li class="nav-item nav-category">Meni</li>
             <li class="nav-item">
-              <a class="nav-link" href="/electricity.html">
+              <a class="nav-link" href="{% url 'basic_data' %}">
+                <i class="menu-icon typcn typcn-shopping-bag"></i>
+                <span class="menu-title">Osnovni Podatki</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'electricity' %}">
                 <i class="menu-icon typcn typcn-shopping-bag"></i>
                 <span class="menu-title">Električna energija</span>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">
+              <a class="nav-link" href="{% url 'traffic' %}">
                 <i class="menu-icon typcn typcn-th-large-outline"></i>
                 <span class="menu-title">Promet</span>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">
+              <a class="nav-link" href="{% url 'heating' %}">
                 <i class="menu-icon typcn typcn-bell"></i>
                 <span class="menu-title">Ogrevanje</span>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">
+              <a class="nav-link" href="{% url 'water' %}">
                 <i class="menu-icon typcn typcn-user-outline"></i>
                 <span class="menu-title">Voda</span>
               </a>
@@ -50,10 +56,10 @@
               <div class="collapse" id="auth">
                 <ul class="nav flex-column sub-menu">
                   <li class="nav-item">
-                    <a class="nav-link" href="#"> Zemeljski plin </a>
+                    <a class="nav-link" href="{% url 'natural_gas' %}"> Zemeljski plin </a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#"> Naftni proizvodi </a>
+                    <a class="nav-link" href="{% url 'petroleum_products' %}"> Naftni proizvodi </a>
                   </li>
                 </ul>
               </div>

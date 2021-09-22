@@ -7230,12 +7230,6 @@ button.bg-dark:focus {
 .text-lowercase {
   text-transform: lowercase !important; }
 
-.text-uppercase {
-  text-transform: uppercase !important; }
-
-.text-capitalize {
-  text-transform: capitalize !important; }
-
 .font-weight-light {
   font-weight: 300 !important; }
 
@@ -7851,8 +7845,7 @@ address p {
   font-weight: 500;
   color: #1c0202;
   margin-bottom: 15px;
-  font-size: 14px;
-  text-transform: capitalize; }
+  font-size: 14px; }
   .rtl .card-title {
     text-align: right; }
 
